@@ -15,7 +15,6 @@ const ITEMS = [
   "Dificuldades de socialização",
   "Regulação emocional",
   "Questões comportamentais",
-  "Desenvolvimento pessoal",
   "Questões relacionadas ao TEA",
 ];
 
