@@ -7,6 +7,8 @@ import { About } from "@/components/site/About";
 import { CTA } from "@/components/site/CTA";
 import { FAQ } from "@/components/site/FAQ";
 import { Footer } from "@/components/site/Footer";
+import { FloatingWhatsApp } from "@/components/site/FloatingWhatsApp";
+import { EMAIL } from "@/lib/site";
 
 const TITLE = "Essenza Terapias | Terapia, Psicanálise e ABA em Toledo – PR";
 const DESCRIPTION =
@@ -40,7 +42,7 @@ export const Route = createFileRoute("/")({
             addressCountry: "BR",
           },
           telephone: "+5545998154203",
-          email: "essenzaeterapias89@gmail.com",
+          email: EMAIL,
           sameAs: ["https://www.instagram.com/elianaalves_psi.oficial"],
         }),
       },
@@ -61,6 +63,7 @@ function Index() {
         <FAQ />
       </main>
       <Footer />
+      <FloatingWhatsApp />
     </div>
   );
 }

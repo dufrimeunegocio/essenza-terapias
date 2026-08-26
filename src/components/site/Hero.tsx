@@ -1,4 +1,4 @@
-import heroAsset from "@/assets/hero.png.asset.json";
+import heroNova from "@/assets/hero-nova.jpeg";
 import { WHATSAPP_URL } from "@/lib/site";
 
 export function Hero() {
@@ -11,16 +11,16 @@ export function Hero() {
       />
       <div className="relative mx-auto grid max-w-6xl items-center gap-10 px-5 pt-8 pb-16 lg:grid-cols-2 lg:gap-16 lg:px-8 lg:pt-20 lg:pb-24">
         <div className="order-1 lg:order-2">
-          <div className="reveal relative mx-auto max-w-md lg:max-w-none">
+          <div className="reveal relative mx-auto max-w-md lg:max-w-[27rem]">
             <div
               className="absolute -inset-3 rounded-[2rem] opacity-40"
               style={{ background: "var(--gradient-gold)" }}
               aria-hidden
             />
             <img
-              src={heroAsset.url}
+              src={heroNova}
               alt="Eliana Alves, terapeuta comportamental e psicanalista da Essenza Terapias, em Toledo – PR"
-              className="relative w-full rounded-[1.75rem] object-cover shadow-[var(--shadow-soft)]"
+              className="relative aspect-[1023/1255] w-full rounded-[1.75rem] object-cover shadow-[var(--shadow-soft)]"
             />
           </div>
         </div>
@@ -41,7 +41,7 @@ export function Hero() {
             individualizado para cada história.
           </p>
 
-          <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:items-center">
+          <div className="mt-9 flex flex-col items-start">
             <a
               href={WHATSAPP_URL}
               target="_blank"
@@ -50,12 +50,6 @@ export function Hero() {
               style={{ background: "var(--gradient-gold)" }}
             >
               Agendar atendimento
-            </a>
-            <a
-              href="#sobre"
-              className="rounded-full border border-border px-8 py-4 text-center text-xs tracking-[0.18em] uppercase text-foreground/70 transition-colors duration-300 hover:border-gold hover:text-gold-deep"
-            >
-              Conheça meu trabalho
             </a>
           </div>
         </div>
