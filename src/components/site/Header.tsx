@@ -82,7 +82,7 @@ export function Header() {
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setOpen(false)}
-              className="mt-4 mb-2 rounded-full bg-gold px-6 py-4 text-center text-xs tracking-[0.16em] uppercase text-primary-foreground"
+              className="mt-4 mb-2 rounded-full bg-ink px-6 py-4 text-center text-xs tracking-[0.16em] uppercase text-ink-foreground"
             >
               Agendar atendimento
             </a>
