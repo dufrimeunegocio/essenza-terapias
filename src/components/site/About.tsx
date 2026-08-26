@@ -1,19 +1,23 @@
-import sobreAsset from "@/assets/sobre.png.asset.json";
+import sobreAsset from "@/assets/sobre-nova.png.asset.json";
 
 export function About() {
   return (
     <section id="sobre" className="bg-background py-20 lg:py-28">
       <div className="mx-auto grid max-w-6xl items-center gap-12 px-5 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16 lg:px-8">
-        <div className="relative mx-auto w-full max-w-sm lg:max-w-none">
+        <div className="relative mx-auto w-full max-w-[22rem] lg:max-w-[26rem]">
           <div
-            className="absolute inset-x-6 bottom-0 top-10 rounded-[1.75rem]"
-            style={{ background: "var(--gradient-soft)", border: "1px solid var(--gold-light)" }}
+            className="absolute inset-x-4 bottom-0 top-8 rounded-[1.75rem] border border-gold-light"
+            style={{ background: "var(--gradient-soft)" }}
+            aria-hidden
+          />
+          <div
+            className="absolute -left-2 -top-2 size-24 rounded-tl-[1.75rem] border-l border-t border-ink/25"
             aria-hidden
           />
           <img
             src={sobreAsset.url}
             alt="Eliana Alves, da Essenza Terapias, terapeuta comportamental, psicanalista e aplicadora ABA"
-            className="relative w-full object-contain"
+            className="relative mx-auto aspect-[1024/1536] max-h-[34rem] w-full object-contain object-bottom"
           />
         </div>
 

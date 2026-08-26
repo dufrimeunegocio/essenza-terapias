@@ -46,8 +46,7 @@ export function Hero() {
               href={WHATSAPP_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-full px-8 py-4 text-center text-xs tracking-[0.18em] uppercase text-primary-foreground shadow-[var(--shadow-soft)] transition-transform duration-300 hover:-translate-y-0.5"
-              style={{ background: "var(--gradient-gold)" }}
+              className="rounded-full bg-ink px-8 py-4 text-center text-xs tracking-[0.18em] uppercase text-ink-foreground shadow-[var(--shadow-soft)] transition-all duration-500 hover:-translate-y-0.5 hover:bg-gold hover:text-ink"
             >
               Agendar atendimento
             </a>

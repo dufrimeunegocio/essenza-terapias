@@ -24,7 +24,12 @@ const DUFRI_URL =
 
 export function Footer() {
   return (
-    <footer id="contato" className="bg-cream">
+    <footer id="contato" className="bg-ink text-ink-foreground">
+      <div
+        className="h-px w-full"
+        style={{ background: "var(--gradient-gold)" }}
+        aria-hidden
+      />
       <div className="mx-auto max-w-6xl px-5 py-16 lg:px-8">
         <div className="grid gap-10 sm:grid-cols-[1.1fr_0.9fr_1.2fr]">
           <div>
@@ -36,12 +41,14 @@ export function Footer() {
           </div>
 
           <nav className="flex flex-col gap-2.5">
-            <p className="eyebrow mb-2">Navegação</p>
+            <p className="mb-2 text-[0.7rem] tracking-[0.28em] uppercase text-gold">
+              Navegação
+            </p>
             {LINKS.map((l) => (
               <a
                 key={l.href}
                 href={l.href}
-                className="text-sm text-muted-foreground transition-colors hover:text-gold-deep"
+                className="text-sm text-ink-foreground/75 transition-colors duration-300 hover:text-gold"
               >
                 {l.label}
               </a>
@@ -49,30 +56,32 @@ export function Footer() {
           </nav>
 
           <div className="flex flex-col gap-2.5">
-            <p className="eyebrow mb-2">Contato</p>
+            <p className="mb-2 text-[0.7rem] tracking-[0.28em] uppercase text-gold">
+              Contato
+            </p>
             <a
               href={WHATSAPP_BASE_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-3 text-sm text-muted-foreground transition-colors duration-300 hover:text-gold-deep active:text-gold-deep"
+              className="flex items-center gap-3 text-sm text-ink-foreground/75 transition-colors duration-300 hover:text-gold active:text-gold"
             >
-              <WhatsAppIcon className="size-4 shrink-0 text-gold-deep" />
+              <WhatsAppIcon className="size-4 shrink-0 text-gold" />
               <span>{WHATSAPP_NUMBER}</span>
             </a>
             <a
               href={`mailto:${EMAIL}`}
-              className="flex items-center gap-3 text-sm break-all text-muted-foreground transition-colors duration-300 hover:text-gold-deep active:text-gold-deep"
+              className="flex items-center gap-3 text-sm break-all text-ink-foreground/75 transition-colors duration-300 hover:text-gold active:text-gold"
             >
-              <Mail className="size-4 shrink-0 text-gold-deep" strokeWidth={1.7} />
+              <Mail className="size-4 shrink-0 text-gold" strokeWidth={1.7} />
               <span>{EMAIL}</span>
             </a>
             <a
               href={INSTAGRAM_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-3 text-sm text-muted-foreground transition-colors duration-300 hover:text-gold-deep active:text-gold-deep"
+              className="flex items-center gap-3 text-sm text-ink-foreground/75 transition-colors duration-300 hover:text-gold active:text-gold"
             >
-              <Instagram className="size-4 shrink-0 text-gold-deep" strokeWidth={1.7} />
+              <Instagram className="size-4 shrink-0 text-gold" strokeWidth={1.7} />
               <span>{INSTAGRAM_HANDLE}</span>
             </a>
           </div>
@@ -83,24 +92,24 @@ export function Footer() {
           style={{ background: "var(--gradient-gold)" }}
           aria-hidden
         />
-        <div className="mt-6 flex flex-col items-center gap-3 text-center text-xs text-muted-foreground sm:flex-row sm:justify-center sm:gap-4">
+        <div className="mt-6 flex flex-col items-center gap-3 text-center text-xs text-ink-foreground/60 sm:flex-row sm:justify-center sm:gap-4">
           <p>
             <Link
               to="/politica-de-privacidade"
-              className="transition-colors duration-300 hover:text-gold-deep active:text-gold-deep"
+              className="transition-colors duration-300 hover:text-gold active:text-gold"
             >
               Política de Privacidade
             </Link>{" "}
-            <span className="text-border">|</span> © 2026 Essenza Terapias. Todos os direitos reservados.
+            <span className="text-ink-foreground/30">|</span> © 2026 Essenza Terapias. Todos os direitos reservados.
           </p>
         </div>
-        <p className="mt-3 text-center text-xs text-muted-foreground">
+        <p className="mt-3 text-center text-xs text-ink-foreground/60">
           Desenvolvido com ❤️ por{" "}
           <a
             href={DUFRI_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="transition-colors duration-300 hover:text-gold-deep active:text-gold-deep"
+            className="transition-colors duration-300 hover:text-gold active:text-gold"
           >
             @Dufrimeunegocio
           </a>
