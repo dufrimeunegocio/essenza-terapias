@@ -9,7 +9,7 @@ export const WHATSAPP_URL =
 
 export const INSTAGRAM_URL = "https://www.instagram.com/elianaalves_psi.oficial";
 export const INSTAGRAM_HANDLE = "@elianaalves_psi.oficial";
-export const EMAIL = "essenzaeterapias@gmail.com";
+export const EMAIL = "essenzaterapias89@gmail.com";
 
 export const NAV_LINKS = [
   { label: "Início", href: "/#inicio" },
