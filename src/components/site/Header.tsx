@@ -37,7 +37,7 @@ export function Header() {
               <a
                 key={l.href}
                 href={l.href}
-                className="text-sm tracking-wide text-muted-foreground transition-colors hover:text-gold-deep"
+                className="text-sm tracking-wide text-ink/75 transition-colors duration-300 hover:text-gold-deep"
               >
                 {l.label}
               </a>
@@ -48,7 +48,7 @@ export function Header() {
             href={WHATSAPP_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="hidden rounded-full border border-gold px-6 py-2.5 text-xs tracking-[0.16em] uppercase text-gold-deep transition-all duration-300 hover:bg-gold hover:text-primary-foreground sm:inline-block"
+            className="hidden rounded-full bg-ink px-6 py-2.5 text-xs tracking-[0.16em] uppercase text-ink-foreground transition-colors duration-500 hover:bg-gold hover:text-ink sm:inline-block"
           >
             Agendar atendimento
           </a>
