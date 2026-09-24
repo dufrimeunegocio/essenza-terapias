@@ -1,4 +1,4 @@
-import logoAsset from "@/assets/logo.png.asset.json";
+import logoImage from "@/assets/logo.webp";
 import { Instagram, Mail } from "lucide-react";
 import { Link } from "@tanstack/react-router";
 import { WhatsAppIcon } from "./WhatsAppIcon";
@@ -34,7 +34,7 @@ export function Footer() {
         <div className="grid gap-10 sm:grid-cols-[1.1fr_0.9fr_1.2fr]">
           <div>
             <img
-              src={logoAsset.url}
+              src={logoImage}
               alt="Essenza Terapias"
               className="h-20 w-auto object-contain sm:h-24"
             />

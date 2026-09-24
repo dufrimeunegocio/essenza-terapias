@@ -1,4 +1,4 @@
-import sobreAsset from "@/assets/sobre-nova.png.asset.json";
+import sobreImage from "@/assets/sobre-nova.png";
 
 export function About() {
   return (
@@ -15,7 +15,7 @@ export function About() {
             aria-hidden
           />
           <img
-            src={sobreAsset.url}
+            src={sobreImage}
             alt="Eliana Alves, da Essenza Terapias, terapeuta comportamental, psicanalista e aplicadora ABA"
             className="relative mx-auto aspect-[1024/1536] max-h-[34rem] w-full object-contain object-bottom"
           />
