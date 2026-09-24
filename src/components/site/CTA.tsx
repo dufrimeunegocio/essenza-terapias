@@ -28,7 +28,7 @@ export function CTA() {
           href={WHATSAPP_URL}
           target="_blank"
           rel="noopener noreferrer"
-          className="mt-9 inline-block rounded-full bg-gold px-10 py-4 text-xs tracking-[0.18em] uppercase text-ink transition-colors duration-500 hover:bg-ink-foreground hover:text-ink"
+          className="mt-9 inline-block rounded-full bg-gold px-10 py-4 text-xs tracking-[0.18em] uppercase text-button-foreground transition-colors duration-500 hover:bg-ink-foreground hover:text-button-foreground"
         >
           Agendar atendimento
         </a>

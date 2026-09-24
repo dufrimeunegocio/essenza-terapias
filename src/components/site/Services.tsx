@@ -79,7 +79,7 @@ export function Services() {
             href={WHATSAPP_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="shrink-0 rounded-full px-8 py-4 text-xs tracking-[0.18em] uppercase text-primary-foreground transition-transform duration-300 hover:-translate-y-0.5"
+            className="shrink-0 rounded-full px-8 py-4 text-xs tracking-[0.18em] uppercase text-button-foreground transition-transform duration-300 hover:-translate-y-0.5"
             style={{ background: "var(--gradient-gold)" }}
           >
             Falar pelo WhatsApp
