@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
-import logoAsset from "@/assets/logo.png.asset.json";
+import logoImage from "@/assets/logo.webp";
 import { NAV_LINKS, WHATSAPP_URL } from "@/lib/site";
 
 export function Header() {
@@ -25,7 +25,7 @@ export function Header() {
       <div className="mx-auto grid max-w-6xl grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-5 py-4 lg:px-8">
         <a href="#inicio" className="min-w-0" aria-label="Essenza Terapias — início">
           <img
-            src={logoAsset.url}
+            src={logoImage}
             alt="Essenza Terapias"
             className="h-9 w-auto object-contain sm:h-11"
           />
