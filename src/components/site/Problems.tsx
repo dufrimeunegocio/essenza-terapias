@@ -68,7 +68,7 @@ export function Problems() {
             href={WHATSAPP_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="shrink-0 rounded-full border border-gold px-8 py-4 text-xs tracking-[0.18em] uppercase text-gold-deep transition-colors duration-300 hover:bg-gold hover:text-primary-foreground"
+            className="shrink-0 rounded-full border border-gold px-8 py-4 text-xs tracking-[0.18em] uppercase text-button-foreground transition-colors duration-300 hover:bg-gold hover:text-button-foreground"
           >
             Quero conversar
           </a>

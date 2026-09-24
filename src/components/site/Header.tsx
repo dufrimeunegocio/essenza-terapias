@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import logoImage from "@/assets/logo.webp";
-import { NAV_LINKS, WHATSAPP_URL } from "@/lib/site";
+import { NAV_LINKS } from "@/lib/site";
 
 export function Header() {
   const [open, setOpen] = useState(false);
@@ -44,15 +44,6 @@ export function Header() {
             ))}
           </nav>
 
-          <a
-            href={WHATSAPP_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hidden rounded-full bg-gold px-6 py-2.5 text-xs tracking-[0.16em] uppercase text-ink transition-colors duration-500 hover:bg-ink-foreground hover:text-ink sm:inline-block"
-          >
-            Agendar atendimento
-          </a>
-
           <button
             onClick={() => setOpen((v) => !v)}
             aria-label={open ? "Fechar menu" : "Abrir menu"}
@@ -77,15 +68,6 @@ export function Header() {
                 {l.label}
               </a>
             ))}
-            <a
-              href={WHATSAPP_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={() => setOpen(false)}
-              className="mt-4 mb-2 rounded-full bg-gold px-6 py-4 text-center text-xs tracking-[0.16em] uppercase text-ink transition-colors duration-300 hover:bg-ink-foreground hover:text-ink"
-            >
-              Agendar atendimento
-            </a>
           </nav>
         </div>
       )}
